@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/LLV"
+    android:background="@color/active"
+    tools:context=".LoginActivity">
+
+  <ImageView
+      android:layout_width="match_parent"
+      android:layout_height="300dp"
+      android:src="@mipmap/icon_logo_foreground"
+      android:layout_marginBottom="-30dp"
+      android:layout_marginTop="0dp"/>
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:textColor="@color/white"
+      android:textSize="30dp"
+      android:text="ИНФОРМАТИКА"
+      android:gravity="center"
+      android:textStyle="bold"/>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="300dp"
+      android:background="@drawable/login_rect"
+      android:layout_marginTop="50dp"
+      android:layout_marginBottom="50dp"
+      android:layout_marginLeft="30dp"
+      android:layout_marginRight="30dp"
+      android:padding="20dp"
+      android:orientation="vertical">
+
+
+    <LinearLayout
+        style="@style/LLV"
+        android:layout_weight="2">
+      <LinearLayout
+          android:layout_weight="1"
+          style="@style/LL">
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_weight="1"
+            android:inputType="textEmailAddress"
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/Emal_jaz"
+            android:textSize="20dp"
+            android:textColor="@color/black_light_light"/>
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_weight="1"
+          style="@style/LL"
+          android:orientation="horizontal">
+        <EditText
+            android:id="@+id/edtPass"
+            android:layout_weight="1"
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/Qupia_soz_eng"
+            android:inputType="textPassword"
+            android:textSize="20dp"
+            android:drawableRight="@drawable/ic_baseline_remove_red_eye"
+            android:textColor="@color/black_light_light"/>
+      </LinearLayout>
+      <Button
+          android:id="@+id/btnSignIn"
+          style="@style/LL"
+          android:layout_weight="1"
+          android:textColor="@color/white"
+          android:background="@drawable/dostar_fragment_btn"
+          android:text="@string/kiru"
+          android:textSize="20dp"
+          android:layout_marginTop="20dp"
+          android:layout_marginBottom="10dp"
+          android:gravity="center" />
+      <TextView
+          android:id="@+id/txt_tirkelu"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/tirkelu"
+          android:textColor="@color/blue_proz"
+          android:textSize="20dp"
+          android:layout_gravity="right"/>
+    </LinearLayout>
+
+
+  </LinearLayout>
+
+</LinearLayout>

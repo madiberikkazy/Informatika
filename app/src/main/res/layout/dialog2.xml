@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LLV"
+    android:background="@color/white">
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/deck_icon" />
+        <TextView
+            android:id="@+id/name_project"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logo"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="Информатика"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/desc_project"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name_project"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="@string/qosymshada_qoldanylgan"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/desc_project"
+            android:layout_marginBottom="150dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/computer2"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_weight="14"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/back_rect"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/qosymsha_turaly"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="25dp"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/btn_back_qosymsha_turaly"
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_baseline_highlight_off"
+            android:layout_marginRight="20dp"/>
+
+
+
+
+    </RelativeLayout>
+</LinearLayout>

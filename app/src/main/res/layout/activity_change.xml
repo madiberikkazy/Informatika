@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChangeActivity">
+    <TextView
+        android:id="@+id/saqtau"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/saqtau"
+        android:textColor="@color/blue_proz"
+        android:textSize="16dp"
+        android:layout_margin="20dp"
+        android:layout_alignParentRight="true"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="470dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_weight="1"
+        android:outlineAmbientShadowColor="@color/active"
+        android:outlineSpotShadowColor="@color/active"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="6dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/user_m" />
+
+            <EditText
+                android:id="@+id/edtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/aty"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/aty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profile_image"
+                android:layout_marginTop="10dp"
+                android:text="@string/aty"
+                android:textColor="@color/black_light_light"
+                android:textSize="13dp" />
+
+            <EditText
+                android:id="@+id/edtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/email"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edtName"
+                android:layout_marginTop="20dp"
+                android:text="@string/email"
+                android:textColor="@color/black_light_light"
+                android:textSize="13dp" />
+
+            <EditText
+                android:id="@+id/edtPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nomer"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/nomer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edtEmail"
+                android:layout_marginTop="20dp"
+                android:text="@string/nomer"
+                android:textColor="@color/black_light_light"
+                android:textSize="13dp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/back_rect"
+        android:orientation="horizontal">
+        <LinearLayout
+            style="@style/LL">
+            <TextView
+                style="@style/LL"
+                android:text="@string/aty_jondi_oz"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="25dp"/>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_baseline_highlight_off"
+            android:layout_marginRight="20dp"/>
+    </RelativeLayout>
+</RelativeLayout>
+
+

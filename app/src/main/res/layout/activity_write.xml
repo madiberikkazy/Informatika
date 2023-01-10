@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LLV"
+    android:background="@color/white"
+    tools:context=".WriteActivity">
+<RelativeLayout
+    style="@style/LL">
+    <LinearLayout
+        android:id="@+id/jazu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/search_rect"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <EditText
+            android:id="@+id/write_txt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:hint="@string/matin_jazynyz"
+            android:textColorHint="@color/black_light_light"
+            android:textSize="25dp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            app:cardCornerRadius="100dp">
+
+            <ImageView
+                android:id="@+id/img_save"
+                style="@style/LL"
+                android:background="@color/active"
+                android:src="@drawable/ic_baseline_add" />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        style="@style/LL"
+        android:layout_below="@id/jazu"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:divider="#00000000"
+        android:paddingBottom="50dp"></ListView>
+</RelativeLayout>
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/back_rect"
+        android:orientation="horizontal">
+        <LinearLayout
+            style="@style/LL">
+            <TextView
+                style="@style/LL"
+                android:text="@string/jasyp_alu"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="25dp"/>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_baseline_highlight_off"
+            android:layout_marginRight="20dp"/>
+    </RelativeLayout>
+</RelativeLayout>

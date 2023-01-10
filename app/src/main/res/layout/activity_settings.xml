@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LL"
+    android:background="@color/white_ligth"
+    tools:context=".SettingsActivity">
+            <RelativeLayout
+                style="@style/LL">
+                <TextView
+                    android:id="@+id/baptaular_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30dp"
+                    android:paddingTop="30dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/baptaular"
+                    android:textColor="@color/black_light"
+                    android:textSize="20dp" />
+            <LinearLayout
+                android:id="@+id/aty_jondi_oz"
+                android:layout_below="@id/baptaular_txt"
+                style="@style/linearL">
+                <LinearLayout
+                    style="@style/linearL_L">
+                    <ImageView
+                        style="@style/img_setting"
+                        android:src="@drawable/exam" />
+                    <TextView
+                        style="@style/textView_settings"
+                        android:text="@string/aty_jondi_oz" />
+                    <ImageView
+                        android:layout_weight="11"
+                        style="@style/LL"/>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                   />
+
+            </LinearLayout>
+            <LinearLayout
+                style="@style/linearL"
+                android:id="@+id/avany_ozg"
+                android:layout_below="@id/aty_jondi_oz">
+                <LinearLayout
+                    style="@style/linearL_L">
+                    <ImageView
+                        style="@style/img_setting"
+                        android:src="@drawable/profile_user"/>
+                    <TextView
+                       style="@style/textView_settings"
+                        android:text="@string/avany_ozg" />
+                    <ImageView
+                        android:layout_weight="11"
+                        style="@style/LL"/>
+                </LinearLayout>
+            </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+
+
+
+                <LinearLayout
+                    style="@style/linearL"
+                    android:id="@+id/password"
+                    android:layout_below="@id/avany_ozg">
+                    <LinearLayout
+                        style="@style/linearL_L">
+                        <ImageView
+                            style="@style/img_setting"
+                            android:src="@drawable/password"/>
+                        <TextView
+                            style="@style/textView_settings"
+                            android:text="@string/qupia_soz_ozg" />
+                        <ImageView
+                            android:layout_weight="11"
+                            style="@style/LL"/>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+
+
+
+
+
+
+
+            </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/til"
+                    android:layout_below="@id/password"
+                   style="@style/linearL">
+                    <LinearLayout
+                       style="@style/linearL_L">
+                        <ImageView
+                            style="@style/img_setting"
+                            android:src="@drawable/earth"/>
+                        <TextView
+                            style="@style/textView_settings"
+                            android:text="@string/til" />
+                        <ImageView
+                            android:layout_weight="11"
+                            style="@style/LL"/>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/shygu"
+                    android:layout_below="@id/til"
+                    style="@style/linearL">
+                    <LinearLayout
+                        style="@style/linearL_L">
+                        <ImageView
+                            style="@style/img_setting"
+                            android:src="@drawable/logout"/>
+                        <TextView
+                            style="@style/textView_settings"
+                            android:text="@string/shygu" />
+                        <ImageView
+                            android:layout_weight="11"
+                            style="@style/LL"/>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/baska"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/shygu"
+                    android:paddingLeft="30dp"
+                    android:paddingTop="30dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/qosymsha_turaly"
+                    android:textColor="@color/black_light"
+                    android:textSize="20dp" />
+                <LinearLayout
+                    android:id="@+id/jobaga_qoldau"
+                    android:layout_below="@id/baska"
+                    style="@style/linearL">
+                    <LinearLayout
+                        style="@style/linearL_L">
+                        <ImageView
+                            style="@style/img_setting"
+                            android:src="@drawable/heart"/>
+                        <TextView
+                            style="@style/textView_settings"
+                            android:text="@string/jobaga_qoldau"/>
+                        <ImageView
+                            android:layout_weight="11"
+                            style="@style/LL"/>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/qosymsha_turaly"
+                    android:layout_below="@id/jobaga_qoldau"
+                   style="@style/linearL">
+                    <LinearLayout
+                       style="@style/linearL_L">
+                        <ImageView
+                            style="@style/img_setting"
+                            android:src="@drawable/information"/>
+                        <TextView
+                           style="@style/textView_settings"
+                            android:text="@string/qosymsha_turaly" />
+                        <ImageView
+                            android:layout_weight="11"
+                            style="@style/LL"/>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/bagalau"
+                    android:layout_below="@id/qosymsha_turaly"
+                    style="@style/linearL">
+                    <LinearLayout
+                        style="@style/linearL_L">
+                        <ImageView
+                            style="@style/img_setting"
+                            android:src="@drawable/star"/>
+                        <TextView
+                            style="@style/textView_settings"
+                            android:text="@string/bagalau"/>
+                        <ImageView
+                            android:layout_weight="11"
+                            style="@style/LL"/>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/dostarmen_bolisu"
+                    android:layout_below="@id/bagalau"
+                   style="@style/linearL">
+                    <LinearLayout
+                        style="@style/linearL_L">
+                        <ImageView
+                            style="@style/img_setting"
+                            android:src="@drawable/next"/>
+                        <TextView
+                            style="@style/textView_settings"
+                            android:text="@string/dostarmen_bolisu" />
+                        <ImageView
+                            android:layout_weight="11"
+                            style="@style/LL"/>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+
+                </LinearLayout>
+
+    </RelativeLayout>
+            <RelativeLayout
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/back_rect"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        style="@style/LL"
+                        android:text="@string/baptaular"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:textSize="25dp"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/btn_back"
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_baseline_highlight_off"
+                    android:layout_marginRight="20dp"/>
+                </RelativeLayout>
+</RelativeLayout>
