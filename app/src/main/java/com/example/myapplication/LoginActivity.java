@@ -48,12 +48,11 @@ public class LoginActivity extends AppCompatActivity {
         btnSignIn = findViewById(R.id.btnSignIn);
         btn_tirkelu  = findViewById(R.id.txt_tirkelu);
         mAuth = FirebaseAuth.getInstance();
-        FirebaseUser currentUser = mAuth.getCurrentUser();
-        if(currentUser != null){
-
-            Intent intent = new Intent(LoginActivity.this,MainActivity.class);
-            startActivity(intent);
-        }
+            FirebaseUser currentUser = mAuth.getCurrentUser();
+            if(currentUser != null){
+                Intent intent = new Intent(LoginActivity.this,MainActivity.class);
+                startActivity(intent);
+            }
         loadingBar  = new ProgressDialog(this);
         btn_tirkelu.setOnClickListener(new View.OnClickListener() {
             @Override

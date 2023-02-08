@@ -67,32 +67,6 @@ public class ChangeActivity extends AppCompatActivity {
             }
         });
     }
-
-    private void getUserinfo() {
-        databaseReference.child(mAuth.getCurrentUser().getUid()).addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                if(snapshot.exists()&&snapshot.getChildrenCount()>0){
-                    String name = snapshot.child("name").getValue().toString();
-                    String phone = snapshot.child("phone").getValue().toString();
-                    String email = snapshot.child("email").getValue().toString();
-                    edtName.setText(name);
-                    edtPhone.setText(phone);
-                    edtEmail.setText(email);
-                    if(snapshot.hasChild("image")){
-                        String image = snapshot.child("image").getValue().toString();
-                        Picasso.get().load(image).into(profile_image);
-                    }
-                }
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
-            }
-        });
-    }
-
     private void uploadProfileImage() {
         final ProgressDialog progressDialog = new ProgressDialog(this);
         progressDialog.setTitle(R.string.aty_jondi_oz);
@@ -120,6 +94,30 @@ public class ChangeActivity extends AppCompatActivity {
             userMap.put("email",edtEmail.getText().toString());
             databaseReference.child(mAuth.getCurrentUser().getUid()).updateChildren(userMap);
         }
+    }
+    private void getUserinfo() {
+        databaseReference.child(mAuth.getCurrentUser().getUid()).addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                if(snapshot.exists()&&snapshot.getChildrenCount()>0){
+                    String name = snapshot.child("name").getValue().toString();
+                    String phone = snapshot.child("phone").getValue().toString();
+                    String email = snapshot.child("email").getValue().toString();
+                    edtName.setText(name);
+                    edtPhone.setText(phone);
+                    edtEmail.setText(email);
+                    if(snapshot.hasChild("image")){
+                        String image = snapshot.child("image").getValue().toString();
+                        Picasso.get().load(image).into(profile_image);
+                    }
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
     }
     @Override
     public void onBackPressed() {

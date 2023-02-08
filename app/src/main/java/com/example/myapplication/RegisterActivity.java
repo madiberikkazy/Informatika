@@ -67,11 +67,11 @@ public class RegisterActivity extends AppCompatActivity {
             }
         });
     }
-    private void registerUser() {
-        String email = edtEmail.getText().toString();
-        String pass = edtPass.getText().toString();
-        RegisterUser(email,pass);
-    }
+        private void registerUser() {
+            String email = edtEmail.getText().toString();
+            String pass = edtPass.getText().toString();
+            RegisterUser(email,pass);
+        }
 
     private void RegisterUser(String email, String pass) {
         if(TextUtils.isEmpty(email)){
